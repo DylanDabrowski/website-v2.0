@@ -9,27 +9,21 @@ const Navbar = ({ toggle }) => {
       <div className="nav">
         <div className="nav__container">
           <Link to="/" className="nav__logo">
-            Logo
+            dd
           </Link>
-          <div className="nav__mobileicon" onClick={toggle}>
+          {/* <div className="nav__mobileicon" onClick={toggle}>
             <FaBars />
-          </div>
+          </div> */}
           <div className="nav__menu">
-            <div className="nav__item">
-              <Link to="/" className="nav__link">
-                Services
-              </Link>
-            </div>
-            <div className="nav__item">
-              <Link to="/" className="nav__link">
-                Travel
-              </Link>
-            </div>
-            <div className="nav__item">
-              <Link to="/" className="nav__link">
-                Penis
-              </Link>
-            </div>
+            <Link to="/" className="nav__link">
+              Services
+            </Link>
+            <Link to="/" className="nav__link">
+              Travel
+            </Link>
+            <Link to="/" className="nav__link">
+              Penis
+            </Link>
           </div>
         </div>
       </div>
