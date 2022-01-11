@@ -1,19 +1,9 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-:root {
-  --clr-primary: #fff
-  --clr-secondary: #fff;
-}
-
 .nav {
   /* border: 1px solid black; */
-  background: var(--clr-primary);
+  background-color: white;
   height: 80px;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
   font-size: 1rem;
   position: sticky;
