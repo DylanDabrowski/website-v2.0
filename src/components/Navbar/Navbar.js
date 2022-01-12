@@ -16,13 +16,13 @@ const Navbar = ({ toggle }) => {
           </div> */}
           <div className="nav__menu">
             <Link to="/" className="nav__link">
-              Services
+              Projects
             </Link>
             <Link to="/" className="nav__link">
-              Travel
+              Blog
             </Link>
             <Link to="/" className="nav__link">
-              Penis
+              Contact
             </Link>
           </div>
         </div>
