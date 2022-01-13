@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
@@ -8,22 +9,22 @@ const Navbar = ({ toggle }) => {
     <>
       <div className="nav">
         <div className="nav__container">
-          <Link to="/" className="nav__logo">
+          <LinkR to="/" className="nav__logo">
             dd
-          </Link>
+          </LinkR>
           {/* <div className="nav__mobileicon" onClick={toggle}>
             <FaBars />
           </div> */}
           <div className="nav__menu">
-            <Link to="/" className="nav__link">
+            <LinkS to="projects" className="nav__link" smooth={true}>
               Projects
-            </Link>
-            <Link to="/" className="nav__link">
+            </LinkS>
+            <LinkS to="/" className="nav__link" smooth={true}>
               Blog
-            </Link>
-            <Link to="/" className="nav__link">
+            </LinkS>
+            <LinkS to="/" className="nav__link" smooth={true}>
               Contact
-            </Link>
+            </LinkS>
           </div>
         </div>
       </div>
