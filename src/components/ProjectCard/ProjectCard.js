@@ -1,12 +1,26 @@
 import React from "react";
 import "./ProjectCard.css";
-import PokedexClip from "../../assets/videos/pokedexapi-web-clip.mp4";
 import { SiDotnet, SiReact } from "react-icons/si";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  clip,
+  backgroundSrc,
+  tag1Icon,
+  tag2Icon,
+  tag1Desc,
+  tag2Desc,
+}) => {
   return (
     <>
       <div className="proj">
+        <video
+          src={backgroundSrc}
+          className="proj__videoBkg"
+          autoPlay
+          loop
+          muted
+          type="video/mp4"
+        />
         <div className="proj__container">
           <div className="proj__videoContainer">
             <video
@@ -14,7 +28,7 @@ const ProjectCard = () => {
               autoPlay
               loop
               muted
-              src={PokedexClip}
+              src={clip}
               type="video/mp4"
             />
           </div>

@@ -1,12 +1,21 @@
 .proj {
-  /* border: solid 1px black; */
+  border: solid 1px black;
   display: flex;
   width: 100%;
   height: 650px;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  background-image: linear-gradient(315deg, #cf1815 0%, #f08a88 90%);
+  /* background-color: #ffffff; */
+  /* background-image: linear-gradient(315deg, #cf1815 0%, #f08a88 90%); */
+}
+
+.proj__videoBkg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .proj__container {

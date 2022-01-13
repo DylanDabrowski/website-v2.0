@@ -1,8 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
 import pfp from "../../assets/images/pfp.png";
-import pfp2 from "../../assets/images/pfp2.png";
-import pfp3 from "../../assets/images/pfp3.png";
 import pfpVideo from "../../assets/videos/pfp.mp4";
 
 const HeroSection = () => {
