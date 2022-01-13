@@ -16,17 +16,31 @@
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
-  padding: 100px;
 }
 
 .hero__pfp {
   /* border: 1px solid black; */
-  width: 250px;
-  height: 250px;
+  width: 275px;
   border-radius: 50%;
   border: 2px solid #efefef;
   filter: drop-shadow(0 0 15px gray);
-  margin-right: 50px;
+  margin-right: 100px;
+}
+
+.hero__pfp-nohover {
+  display: block;
+}
+
+.hero__pfp-hover {
+  display: none;
+}
+
+.hero__pfp:hover > .hero__pfp-nohover {
+  display: none;
+}
+
+.hero__pfp:hover > .hero__pfp-hover {
+  display: block;
 }
 
 .hero__titleContainer {

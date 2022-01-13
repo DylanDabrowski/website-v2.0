@@ -3,13 +3,24 @@ import "./HeroSection.css";
 import pfp from "../../assets/images/pfp.png";
 import pfp2 from "../../assets/images/pfp2.png";
 import pfp3 from "../../assets/images/pfp3.png";
+import pfpVideo from "../../assets/videos/pfp.mp4";
 
 const HeroSection = () => {
   return (
     <>
       <div className="hero">
         <div className="hero__container">
-          <img className="hero__pfp" src={pfp} alt="pfp" />
+          <div className="hero__pfp">
+            <img className="hero__pfp hero__pfp-nohover" src={pfp} alt="pfp" />
+            <video
+              className="hero__pfp hero__pfp-hover"
+              autoPlay
+              loop
+              muted
+              src={pfpVideo}
+              type="video/mp4"
+            />
+          </div>
           <div className="hero__titleContainer">
             <h2 className="hero__title">Dylan Dabrowski</h2>
             <p className="hero__description">
