@@ -49,6 +49,7 @@
   background: white;
   color: black;
   border-radius: 30px;
+  cursor: pointer;
   text-decoration: none;
   padding: 5px 20px;
   font-size: 1rem;
@@ -100,11 +101,8 @@
   color: black;
 }
 
-
 @media screen and (max-width: 960px) {
-
 }
 
 @media screen and (max-width: 768px) {
-  
 }

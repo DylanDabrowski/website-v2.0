@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
             <LinkS to="/" className="nav__link" smooth={true}>
               Blog
             </LinkS>
-            <LinkS to="/" className="nav__link" smooth={true}>
+            <LinkS to="contact" className="nav__link" smooth={true}>
               Contact
             </LinkS>
           </div>

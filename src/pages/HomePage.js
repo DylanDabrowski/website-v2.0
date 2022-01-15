@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import { PokedexAPICard } from "../components/ProjectCard/Data";
+import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const HomePage = () => {
         <SectionTitle text={"Projects"} id={"projects"} />
         <ProjectCard {...PokedexAPICard} />
       </div>
+      <Footer />
     </>
   );
 };
