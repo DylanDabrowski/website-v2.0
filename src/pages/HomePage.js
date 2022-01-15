@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./HomePage.css";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
@@ -16,8 +17,10 @@ const HomePage = () => {
     <>
       <Navbar toggle={toggle} />
       <HeroSection />
-      <SectionTitle text={"Projects"} id={"projects"} />
-      <ProjectCard {...PokedexAPICard} />
+      <div className="home__projects">
+        <SectionTitle text={"Projects"} id={"projects"} />
+        <ProjectCard {...PokedexAPICard} />
+      </div>
     </>
   );
 };

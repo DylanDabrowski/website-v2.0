@@ -1,10 +1,8 @@
 import PokedexClip from "../../assets/videos/pokedexapi-web-clip.mp4";
-import PokedexWallpaper from "../../assets/videos/pokedex-wallpaper.mp4";
 import { SiDotnet, SiReact } from "react-icons/si";
 
 export const PokedexAPICard = {
   clip: PokedexClip,
-  backgroundSrc: PokedexWallpaper,
   tag1Icon: SiReact,
   tag2Icon: SiDotnet,
   tag1Desc: "Frontend made in React.js",

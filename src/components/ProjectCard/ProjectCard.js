@@ -2,25 +2,10 @@ import React from "react";
 import "./ProjectCard.css";
 import { SiDotnet, SiReact } from "react-icons/si";
 
-const ProjectCard = ({
-  clip,
-  backgroundSrc,
-  tag1Icon,
-  tag2Icon,
-  tag1Desc,
-  tag2Desc,
-}) => {
+const ProjectCard = ({ clip, tag1Icon, tag2Icon, tag1Desc, tag2Desc }) => {
   return (
     <>
       <div className="proj">
-        <video
-          src={backgroundSrc}
-          className="proj__videoBkg"
-          autoPlay
-          loop
-          muted
-          type="video/mp4"
-        />
         <div className="proj__container">
           <div className="proj__videoContainer">
             <video
