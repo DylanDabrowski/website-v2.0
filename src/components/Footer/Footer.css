@@ -34,7 +34,9 @@
 
 .footer__icon-text {
   font-size: 15px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 
 .footer__signoff {
@@ -53,6 +55,12 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.footer__signoff-text::after {
+  content: "2022";
+  margin-left: 10px;
+  color: #a1a1a1;
+}
+
 .footer__signoff-emoji {
-  font-size: 30px;
+  font-size: 25px;
 }

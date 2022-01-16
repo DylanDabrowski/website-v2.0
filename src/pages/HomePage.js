@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./HomePage.css";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
-import ProjectCard from "../components/ProjectCard/ProjectCard";
+import ProjectCard1 from "../components/ProjectCard/ProjectCard1.js";
+import ProjectCard2 from "../components/ProjectCard/ProjectCard2";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
-import { PokedexAPICard } from "../components/ProjectCard/Data";
 import Footer from "../components/Footer/Footer";
+
+import { PokedexAPICard } from "../components/ProjectCard/Data.js";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +21,9 @@ const HomePage = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <div className="home__projects">
-        <SectionTitle text={"Projects"} id={"projects"} />
-        <ProjectCard {...PokedexAPICard} />
+        <SectionTitle text={"Current Projects"} id={"projects"} />
+        <ProjectCard1 {...PokedexAPICard} />
+        <ProjectCard2 {...PokedexAPICard} />
       </div>
       <Footer />
     </>
