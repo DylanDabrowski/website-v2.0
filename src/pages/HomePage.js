@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./HomePage.css";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
-import ProjectCard1 from "../components/ProjectCard/ProjectCard1.js";
-import ProjectCard2 from "../components/ProjectCard/ProjectCard2";
+import ProjectCard from "../components/ProjectCard/ProjectCard.js";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import Footer from "../components/Footer/Footer";
 
@@ -22,8 +21,7 @@ const HomePage = () => {
       <HeroSection />
       <div className="home__projects">
         <SectionTitle text={"Current Projects"} id={"projects"} />
-        <ProjectCard1 {...PokedexAPICard} />
-        <ProjectCard2 {...PokedexAPICard} />
+        <ProjectCard {...PokedexAPICard} />
       </div>
       <Footer />
     </>

@@ -1,22 +1,26 @@
-.proj1 {
+import styled from "styled-components";
+
+export const Proj = styled.div`
   /* border: solid 1px black; */
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-}
+`;
 
-.proj1__container {
+export const ProjContainer = styled.div`
   /* border: solid 1px black; */
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-columns: minmax(1fr, 1fr);
   width: 100%;
   align-items: center;
   justify-content: center;
   margin: 100px 0;
-}
+  grid-template-areas: ${({ vidStart }) =>
+    vidStart ? `'col1 col2'` : `'col2 col1'`};
+`;
 
-.proj1__videoContainer {
+export const VideoContainer = styled.div`
   /* border: solid 1px black; */
   margin-right: 100px;
   padding: 6px;
@@ -24,43 +28,41 @@
   background-color: #ffffff;
   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   box-shadow: 0 1px 10px #636363;
-}
+  grid-area: col1;
+`;
 
-.proj1__video {
+export const Video = styled.video`
   width: 50rem;
-}
+`;
 
-.proj1__tagsContainer {
+export const TagsContainer = styled.div`
   /* border: solid 1px black; */
-}
+  grid-area: col2;
+`;
 
-.proj1__tagContainer {
+export const TagContainer = styled.div`
   /* border: solid 1px black; */
   display: flex;
-  flex-direction: row;
   align-items: center;
+  width: 25rem;
   justify-content: start;
-  margin: 50px 0px;
-}
+  margin: 50px 50px;
+`;
 
-.proj1__tag {
+export const Tag = styled.div`
   /* border: solid 1px black; */
+  display: flex;
   background: #ffffff;
   padding: 12px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 10px #636363;
-}
+  grid-area: col1;
+`;
 
-.proj1__tagIcon {
-  /* border: solid 1px black; */
-  font-size: 75px;
-  color: #232b2b;
-}
-
-.proj1__tagDescriptionContainer {
-  /* border: solid 1px black; */
+export const TagDescriptionContainer = styled.div`
+  display: flex;
   margin: 0 20px;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -70,12 +72,13 @@
   box-shadow: 0 2px 10px #636363;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
+  grid-area: col2;
 
-.proj1__tagDescription {
+  ${Tag}:hover + & {
+    opacity: 0.75;
+  }
+`;
+
+export const TagDescription = styled.p`
   padding: 0 15px;
-}
-
-.proj1__tag:hover ~ .proj1__tagDescriptionContainer {
-  opacity: 0.75;
-}
+`;
