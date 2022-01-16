@@ -7,6 +7,7 @@ import SectionTitle from "../components/SectionTitle/SectionTitle";
 import Footer from "../components/Footer/Footer";
 
 import { PokedexAPICard } from "../components/ProjectCard/Data.js";
+import { MobileNav } from "../components/MobileNav/MobileNav";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ const HomePage = () => {
 
   return (
     <>
+      <MobileNav isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <div className="home__projects">

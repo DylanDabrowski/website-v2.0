@@ -66,7 +66,7 @@ export const TagDescriptionContainer = styled.div`
   margin: 0 20px;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
+  padding: 18px;
   background: #636363;
   color: white;
   box-shadow: 0 2px 10px #636363;
