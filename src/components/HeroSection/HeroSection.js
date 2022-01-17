@@ -4,9 +4,11 @@ import pfp from "../../assets/images/pfp.png";
 import pfpVideo from "../../assets/videos/pfp.mp4";
 
 const HeroSection = () => {
+  const width = window.innerWidth;
+
   return (
     <>
-      <div className="hero">
+      <div className="hero" width={width}>
         <div className="hero__container">
           <div className="hero__pfp">
             <img className="hero__pfp hero__pfp-nohover" src={pfp} alt="pfp" />
