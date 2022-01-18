@@ -11,8 +11,6 @@ export const Proj = styled.div`
 export const ProjContainer = styled.div`
   /* border: solid 1px black; */
   display: grid;
-  grid-auto-columns: minmax(1fr, 1fr);
-  width: 100%;
   align-items: center;
   justify-content: center;
   margin: 100px 0;
@@ -22,31 +20,40 @@ export const ProjContainer = styled.div`
 
 export const VideoContainer = styled.div`
   /* border: solid 1px black; */
-  margin-right: 100px;
   padding: 6px;
   border: 9px outset #ddd;
   background-color: #ffffff;
   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   box-shadow: 0 1px 10px #636363;
   grid-area: col1;
+
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
 `;
 
 export const Video = styled.video`
-  width: 50rem;
+  width: 800px;
 `;
 
 export const TagsContainer = styled.div`
   /* border: solid 1px black; */
   grid-area: col2;
+  width: max-content;
+  margin: 0 4rem;
+
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
 `;
 
 export const TagContainer = styled.div`
   /* border: solid 1px black; */
   display: flex;
   align-items: center;
-  width: 25rem;
+  width: max-content;
   justify-content: start;
-  margin: 50px 50px;
+  margin: 50px 0;
 `;
 
 export const Tag = styled.div`
@@ -62,8 +69,9 @@ export const Tag = styled.div`
 `;
 
 export const TagDescriptionContainer = styled.div`
+  /* border: solid 1px black; */
   display: flex;
-  margin: 0 20px;
+  margin-left: 20px;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   padding: 18px;
