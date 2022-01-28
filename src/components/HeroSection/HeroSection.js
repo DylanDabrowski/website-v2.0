@@ -24,7 +24,7 @@ const HeroSection = () => {
           <div className="hero__titleContainer">
             <h2 className="hero__title">Dylan Dabrowski</h2>
             <p className="hero__description">
-              Hi my name is Dylan welcome to my page
+              Hi my name is Dylan welcome to my page 😃
             </p>
           </div>
         </div>

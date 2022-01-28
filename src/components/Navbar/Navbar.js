@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, hasSlideLinks }) => {
   return (
     <>
       <div className="nav">
@@ -14,10 +14,18 @@ const Navbar = ({ toggle }) => {
               ❴ ❵
             </LinkR>
           </div>
-          <div className="nav__mobileicon" onClick={toggle}>
+
+          <div
+            className="nav__mobileicon"
+            onClick={toggle}
+            style={{ display: hasSlideLinks ? "" : "none" }}
+          >
             <FaBars />
           </div>
-          <div className="nav__menu">
+          <div
+            className="nav__menu"
+            style={{ display: hasSlideLinks ? "" : "none" }}
+          >
             <LinkS to="projects" className="nav__link" smooth={true}>
               Projects
             </LinkS>

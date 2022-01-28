@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.combox {
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  height: 450px;
+}
+
+.combox__info-container {
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 1px 5px #363636;
+  background-color: white;
+}
+
+.combox__info-tag {
+  margin: 10px 0 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px 7px 5px 7px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #9ccca3;
+  background-color: #b1d8b7;
+  background-image: linear-gradient(360deg, #b8e2be 0%, #9ccca3 60%);
+}
+
+.combox__info {
+  margin: 10px;
+  padding: 10px 20px;
+  border: solid 1px #b1b1b1;
+  box-shadow: 0 1px 1px #b1b1b1;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.combox__form {
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.combox__textarea-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 1px 5px #363636;
+  background-color: white;
+}
+
+.combox__textarea {
+  display: flex;
+  width: 100%;
+  border: none;
+  margin: 25px;
+  outline: none !important;
+  resize: none;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.combox__btns-container {
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.combox__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 55px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 1px 5px #9ccca3;
+  background-color: #9ccca3;
+  color: #406e45;
+  cursor: pointer;
+
+  transition: 0.1s ease-in-out;
+}
+
+.combox__submit:hover {
+  background-color: #406e45;
+  color: white;
+  box-shadow: 0 1px 5px #406e45;
+}
+
+.combox__submit-icon {
+  font-size: 1.4rem;
+}

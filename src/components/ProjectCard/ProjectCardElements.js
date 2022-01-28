@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Proj = styled.div`
   /* border: solid 1px black; */
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -10,12 +11,47 @@ export const Proj = styled.div`
 
 export const ProjContainer = styled.div`
   /* border: solid 1px black; */
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+
+  @media screen and (max-width: 840px) {
+    width: 90%;
+  }
+`;
+
+export const TitleContainer = styled.div`
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ContentContainer = styled.div`
+  /* border: solid 1px black; */
   display: grid;
   align-items: center;
   justify-content: center;
-  margin: 100px 0;
+  margin: 50px 0 0 0;
   grid-template-areas: ${({ vidStart }) =>
     vidStart ? `'col1 col2'` : `'col2 col1'`};
+`;
+
+export const Title = styled.h1`
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 55px;
+  color: #232b2b;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+`;
+
+export const Description = styled.p`
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 35px;
+  color: #232b2b;
+  display: flex;
+  justify-content: start;
 `;
 
 export const VideoContainer = styled.div`

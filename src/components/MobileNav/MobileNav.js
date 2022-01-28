@@ -5,7 +5,8 @@ import {
   CloseIcon,
   MobileNavWrapper,
   MobileNavMenu,
-  MobileNavLink,
+  MobileNavLinkS,
+  MobileNavLinkR,
 } from "./MobileNavElements";
 
 export const MobileNav = ({ isOpen, toggle }) => {
@@ -16,12 +17,12 @@ export const MobileNav = ({ isOpen, toggle }) => {
       </Icon>
       <MobileNavWrapper>
         <MobileNavMenu>
-          <MobileNavLink to="projects" onClick={toggle}>
+          <MobileNavLinkS to="projects" onClick={toggle}>
             Projects
-          </MobileNavLink>
-          <MobileNavLink to="contact" onClick={toggle}>
+          </MobileNavLinkS>
+          <MobileNavLinkS to="contact" onClick={toggle}>
             Contact
-          </MobileNavLink>
+          </MobileNavLinkS>
         </MobileNavMenu>
       </MobileNavWrapper>
     </MobileNavContainer>

@@ -52,7 +52,27 @@ export const MobileNavMenu = styled.ul`
   justify-content: center;
 `;
 
-export const MobileNavLink = styled(LinkS)`
+export const MobileNavLinkS = styled(LinkS)`
+  /* border: solid 1px black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: 0ms.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+
+  &:hover {
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+`;
+
+export const MobileNavLinkR = styled(LinkR)`
   /* border: solid 1px black; */
   display: flex;
   align-items: center;

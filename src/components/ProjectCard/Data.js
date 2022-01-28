@@ -9,5 +9,4 @@ export const PokedexAPICard = {
   tag1Desc: "React.js frontend",
   tag2Desc: ".NET API backend",
   vidStart: true,
-  vidStart: true,
 };

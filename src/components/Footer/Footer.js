@@ -8,6 +8,7 @@ import {
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
+import { BsFillChatLeftDotsFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -42,6 +43,10 @@ const Footer = () => {
               <AiFillTwitterCircle className="footer__icon" />
               <h1 className="footer__icon-text">Twitter</h1>
             </a>
+            {/* <a href="/comment" className="footer__row">
+              <BsFillChatLeftDotsFill className="footer__icon" />
+              <h1 className="footer__icon-text">Leave a Comment</h1>
+            </a> */}
           </div>
           <div className="footer__col3">
             <a
