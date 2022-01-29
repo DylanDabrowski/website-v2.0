@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(0deg, #406e45, #94c973, #b1d8b7);
+  background: linear-gradient(0deg, #ffffff, #94c973, #b1d8b7);
   background-size: 600% 600%;
 
   animation: GreenGradient 11s ease infinite;
