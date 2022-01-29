@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
+import Logo from "../../assets/images/logo.png";
 
 const Navbar = ({ toggle, hasSlideLinks }) => {
   return (
@@ -12,6 +13,7 @@ const Navbar = ({ toggle, hasSlideLinks }) => {
           <div className="nav__logo-container">
             <LinkR to="/" className="nav__logo">
               ❴ ❵
+              {/* <img src={Logo} alt="logo" className="nav__logo-icon" /> */}
             </LinkR>
           </div>
 

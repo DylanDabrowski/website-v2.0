@@ -2,6 +2,7 @@ import React from "react";
 import "./HeroSection.css";
 import pfp from "../../assets/images/pfp.png";
 import pfpVideo from "../../assets/videos/pfp.mp4";
+import ImgCover from "../../assets/images/white-oval.png";
 
 const HeroSection = () => {
   const width = window.innerWidth;
@@ -9,8 +10,9 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero" width={width}>
+        <img src={ImgCover} alt="cover" className="hero__background-cover" />
         <div className="hero__container">
-          <div className="hero__pfp">
+          <div className="hero__pfp-container">
             <img className="hero__pfp hero__pfp-nohover" src={pfp} alt="pfp" />
             <video
               className="hero__pfp hero__pfp-hover"
