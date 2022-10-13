@@ -1,0 +1,33 @@
+.skill {
+  /* border: 1px solid black; */
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 250px 250px 250px 250px;
+  justify-content: center;
+}
+
+.skill__container {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill__icon {
+  /* border: 1px solid red; */
+  height: 80px;
+  margin-right: 15px;
+}
+
+.skill__text-container {
+}
+
+.skill__title {
+  /* border: 1px solid red; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.skill__desc {
+}

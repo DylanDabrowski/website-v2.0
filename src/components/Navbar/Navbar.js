@@ -28,8 +28,8 @@ const Navbar = ({ toggle, hasSlideLinks }) => {
             className="nav__menu"
             style={{ display: hasSlideLinks ? "" : "none" }}
           >
-            <LinkS to="projects" className="nav__link" smooth={true}>
-              Projects
+            <LinkS to="skills" className="nav__link" smooth={true}>
+              Skills
             </LinkS>
             <LinkS to="contact" className="nav__link" smooth={true}>
               Contact

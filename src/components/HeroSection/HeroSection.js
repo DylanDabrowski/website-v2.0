@@ -10,9 +10,8 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero" width={width}>
-        <img src={ImgCover} alt="cover" className="hero__background-cover" />
         <div className="hero__container">
-          <div className="hero__pfp-container">
+          {/* <div className="hero__pfp-container">
             <img className="hero__pfp hero__pfp-nohover" src={pfp} alt="pfp" />
             <video
               className="hero__pfp hero__pfp-hover"
@@ -22,7 +21,7 @@ const HeroSection = () => {
               src={pfpVideo}
               type="video/mp4"
             />
-          </div>
+          </div> */}
           <div className="hero__titleContainer">
             <h2 className="hero__title">Dylan Dabrowski</h2>
             <p className="hero__description">

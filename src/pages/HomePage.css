@@ -7,7 +7,8 @@ html, body{
   overflow-x: hidden;
   }
 
-.home__projects {
+.main {
   background-color: #ffffff;
+  padding-bottom: 100px;
   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
