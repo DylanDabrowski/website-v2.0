@@ -1,0 +1,144 @@
+.job2 {
+    width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.job2__section {
+    padding: 2em;
+    background-image: #d7e1ec;
+    display: grid;
+    grid-template-areas: 
+        "job2__title job2__title job2__img1"
+        "job2__content job2__img2 job2__img1"
+        "job2__content job2__img2 job2__img3";
+    gap: 2em;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: auto 1fr 200px;
+    position: relative;
+}
+
+.job2__company {
+    position: absolute;
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: -1;
+    font-size: 12rem;
+    top: -140px;
+    right: -100px;
+    color: #171818;
+    text-align: end;
+}
+
+.job2__title {
+    grid-area: job2__title;
+}
+.job2__content {
+    grid-area: job2__content;
+}
+.job2__img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    grid-area: job2__img1;
+}
+.job2__img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    grid-area: job2__img2;
+}
+.job2__img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    grid-area: job2__img3;
+}
+
+.job2__title {
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1em;
+}
+
+.job2__description {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+.job2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1700px) {
+    .job2 {
+        width: 1200px;
+    }
+
+    .job2__company {
+        font-size: 10rem;
+        top: -140px;
+        left: -20px;
+    }
+
+    .job2__title {
+        font-size: 7rem;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1260px) {
+    .job2 {
+        width: 1000px;
+    }
+
+    .job2__img1 {
+        visibility: hidden;
+    }
+    .job2__img2 {
+        visibility: hidden;
+    }
+    .job2__img3 {
+        visibility: hidden;
+    }
+
+    .job2__company {
+        font-size: 8rem;
+        top: -140px;
+        left: 200px;
+    }
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    .job2 {
+        width: 100%;
+        
+    }
+
+    .job2__company {
+        font-size: 4rem;
+        right: 100px;
+    }
+
+    .job2__title {
+        font-size: 3.5rem;
+    }
+
+    .job2__description {
+        visibility: hidden;
+        font-size: 1px;
+    }
+
+  }

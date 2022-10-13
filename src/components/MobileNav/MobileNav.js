@@ -17,6 +17,9 @@ export const MobileNav = ({ isOpen, toggle }) => {
       </Icon>
       <MobileNavWrapper>
         <MobileNavMenu>
+          <MobileNavLinkS to="work" onClick={toggle}>
+            Work
+          </MobileNavLinkS>
           <MobileNavLinkS to="projects" onClick={toggle}>
             Projects
           </MobileNavLinkS>
