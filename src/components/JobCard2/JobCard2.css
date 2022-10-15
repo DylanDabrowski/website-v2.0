@@ -84,6 +84,7 @@
     font-weight: 300;
     margin: 0;
     line-height: 1em;
+    text-align: end;
 }
 
 .job2__description {
@@ -98,7 +99,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1900px) {
     .job2 {
         width: 1200px;
     }
@@ -106,7 +107,7 @@
     .job2__company {
         font-size: 10rem;
         top: -140px;
-        left: -20px;
+        right: -20px;
     }
 
     .job2__title {
@@ -114,39 +115,35 @@
     }
   
   }
-  
-  @media screen and (max-width: 1260px) {
-    .job2 {
-        width: 1000px;
-    }
 
-    .job2__img1 {
-        visibility: hidden;
-    }
-    .job2__img2 {
-        visibility: hidden;
-    }
-    .job2__img3 {
-        visibility: hidden;
-    }
-
-    .job2__company {
-        font-size: 8rem;
-        top: -140px;
-        left: 200px;
-    }
-
-  }
-
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1400px) {
     .job2 {
         width: 100%;
-        
     }
 
+    .job2__section {
+        grid-template-areas: 
+            "job2__title"
+            "job2__content";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 8em;
+    }
+    .job2__img1 {
+        display: none;
+    }
+    .job2__img2 {
+        display: none;
+    }
+    .job2__img3 {
+        display: none;
+    }
+
+
     .job2__company {
-        font-size: 4rem;
-        right: 100px;
+        font-size: 6rem;
+        top: 20px;
+        right: 125px;
     }
 
     .job2__title {
@@ -154,8 +151,7 @@
     }
 
     .job2__description {
-        visibility: hidden;
-        font-size: 1px;
+        font-size: 25px;
     }
 
   }

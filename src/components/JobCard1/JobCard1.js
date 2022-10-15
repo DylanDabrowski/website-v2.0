@@ -1,10 +1,10 @@
 import React from "react";
 import "./JobCard1.css";
 
-const JobCard1 = ({ id, company, position, description, img1, img2, img3 }) => {
+const JobCard1 = ({ company, position, description, img1, img2, img3 }) => {
   return (
     <>
-      <div class="job1" id={id}>
+      <div class="job1">
         <section class="job1__section">
           <img src={img1} class="job1__img1" alt="job img 1" />
           <h1 class="job1__company">{company}</h1>

@@ -24,8 +24,8 @@ const HomePage = () => {
       <Navbar toggle={toggle} hasSlideLinks={true} />
       <HeroSection />
       <div className="main">
+      <SectionTitle id={"work"} />
         <JobCard1
-          id={"work"}
           company={CloudDX.companyName}
           position={CloudDX.positionTitle}
           description={CloudDX.description}

@@ -97,7 +97,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1900px) {
     .job1 {
         width: 1200px;
     }
@@ -113,39 +113,35 @@
     }
   
   }
-  
-  @media screen and (max-width: 1260px) {
-    .job1 {
-        width: 1000px;
-    }
 
-    .job1__img1 {
-        visibility: hidden;
-    }
-    .job1__img2 {
-        visibility: hidden;
-    }
-    .job1__img3 {
-        visibility: hidden;
-    }
-
-    .job1__company {
-        font-size: 8rem;
-        top: -140px;
-        left: 200px;
-    }
-
-  }
-
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1400px) {
     .job1 {
         width: 100%;
-        
     }
 
+    .job1__section {
+        grid-template-areas: 
+            "job1__title"
+            "job1__content";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 8em;
+    }
+    .job1__img1 {
+        display: none;
+    }
+    .job1__img2 {
+        display: none;
+    }
+    .job1__img3 {
+        display: none;
+    }
+
+
     .job1__company {
-        font-size: 4rem;
-        left: 100px;
+        font-size: 6rem;
+        top: 20px;
+        left: 125px;
     }
 
     .job1__title {
@@ -153,8 +149,7 @@
     }
 
     .job1__description {
-        visibility: hidden;
-        font-size: 1px;
+        font-size: 25px;
     }
 
   }
