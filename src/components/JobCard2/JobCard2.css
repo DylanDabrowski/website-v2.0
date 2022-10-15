@@ -119,6 +119,7 @@
   @media screen and (max-width: 1400px) {
     .job2 {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .job2__section {
@@ -141,8 +142,8 @@
 
 
     .job2__company {
-        font-size: 6rem;
-        top: 20px;
+        font-size: 3rem;
+        top: 50px;
         right: 125px;
     }
 
@@ -154,4 +155,24 @@
         font-size: 25px;
     }
 
+  }
+
+  @media screen and (max-width: 580px) {
+    .job2__section {
+        padding: 3em;
+    }
+
+    .job2__company {
+        font-size: 2rem;
+        top: 0;
+        right: 50px;
+    }
+
+    .job2__title {
+        font-size: 3rem;
+    }
+
+    .job2__description {
+        font-size: 15px;
+    }
   }

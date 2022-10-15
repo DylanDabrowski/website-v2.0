@@ -65,8 +65,16 @@
   font-size: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .footer__row {
-    margin: 20px 20px;
+    margin: 10px 10px;
+  }
+
+  .footer__icon {
+    font-size: 25px;
+  }
+
+  .footer__icon-text {
+    font-size: 12px;
   }
 }
